@@ -1,0 +1,46 @@
+<div class="container">
+    <div>
+        <h2>Employee Management</h2>
+    </div>
+    <div>
+      <table class="table table-hover">
+         
+        <tr class="table-header">
+          <th> ID </th>
+          <th> EmployeeName </th>
+          <th> Salary </th>
+          <th> Age </th>
+          <th> Actions </th>
+        </tr>
+        <tr class="create-emp">
+            
+              <td colspan="3">
+                <button [routerLink]="['/create']" >create</button>
+              </td>
+        </tr>
+        <tr *ngFor="let emp of empList; let i = index" class="table-column">
+            
+          <td> {{emp.id}} </td>
+          <td> {{emp.employee_name}} </td>
+          <td> {{emp.employee_salary}} </td>
+          <td> {{emp.employee_age}} </td>
+          <td> 
+              <button  [routerLink]="['/employeedetails', emp?.id]" >Edit</button> |
+              <span *ngIf= "deleteConfirmCheck === i">
+                <span> Are you sure you want to delete?</span>
+                <button class="btn btn-danger" (click) = "deleteEmpDetails(emp?.id)">Yes</button>
+                <button class="btn btn-primary" (click) = "deleteConfirmCheck = null">No</button>
+              </span>
+              <button  *ngIf="deleteConfirmCheck !== i" (click)="deleteConfirmCheck = i"> Delete</button>
+          </td>
+        </tr>
+        
+        
+      </table>
+         
+
+          
+      
+    
+    </div>
+  </div>

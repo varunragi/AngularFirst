@@ -1,0 +1,51 @@
+.my-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    
+
+
+}
+.logimg{
+    height: 97vh;
+}
+
+.cen{
+    width: 400px;
+    padding-bottom: 90px;
+    padding-top: 30px;
+    text-align: center;
+    
+
+}
+
+.demo{
+    width: 100%;
+    display: block;
+    
+    h2{
+        padding-bottom: 60px;
+        font-size:68px;
+        
+    }
+
+    input{
+        width: 300px;
+        margin-bottom: 25px;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid rgb(128, 112, 112);
+        border-radius: 3px;
+
+        &:hover{
+            transform: scale(1.2);
+            
+        }
+            }
+}
+

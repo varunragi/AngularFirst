@@ -1,0 +1,13 @@
+<div class="contain">
+      <form [formGroup] = "empForm" class="details">
+          <h2>Employee Details </h2>
+          Employee Name: &nbsp;&nbsp;&nbsp;
+    <input type="text" name="employee_name" [(ngModel)]="employee_name" formControlName="employee_name" placeholder="employee_name"> <br>
+          Employee Salary:&nbsp;&nbsp;&nbsp;
+    <input type="text" name="employee_salary" [(ngModel)]="employee_salary" formControlName="employee_salary" placeholder="employee_salary"> <br>
+          Employee Age: &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="employee_age" [(ngModel)]="employee_age" formControlName="employee_age" placeholder="employee_age"> <br>
+        <button type="submit" class="btn btn-primary" (click)="updateEmpDetails(empList?.id)">submit</button>
+        <button type="submit" class="btn btn-primary" (click) = "deleteEmpDetails(empList?.id)">delete</button>
+   </form> 
+  </div>

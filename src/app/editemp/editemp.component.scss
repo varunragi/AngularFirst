@@ -1,0 +1,34 @@
+.contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 14px;
+    background: #aca7a7;
+    height: 100vh;
+    width: 100%;
+}
+
+.details{
+    background-color: ghostwhite;
+    box-shadow: 0px 6px 5px 5px rgba(0, 0, 0, 0.27);
+    padding: 50px;
+    width: 450px;
+
+    h2{
+        font-size: 40px;
+        padding-bottom: 15px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        
+    }
+    input{
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    button{
+        margin-right: 4px;
+        text-align: center;
+    }
+}
+
